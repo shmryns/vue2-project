@@ -105,7 +105,6 @@ export default {
     },
     async getIhumImages() {
       const res = await getIhumImages(this.id);
-      console.log(res.data.message);
       this.lunbolist = res.data.message;
     },
     addCart() {

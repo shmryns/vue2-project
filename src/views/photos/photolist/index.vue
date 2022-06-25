@@ -52,7 +52,6 @@ export default {
         title: '全部',
       });
       this.cates = res.data.message;
-      console.log(res.data.message);
     },
     async getImages(id) {
       // console.log(id);

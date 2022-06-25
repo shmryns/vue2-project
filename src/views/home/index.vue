@@ -60,7 +60,7 @@ export default {
   }
   .my-grid {
     .van-grid-item__icon {
-      font-size: 60px;
+      font-size: 50px;
     }
   }
 }

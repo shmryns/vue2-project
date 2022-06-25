@@ -67,7 +67,6 @@ export default {
       this.$store.commit('cart/CHECK_ALL');
     },
     showPopup() {
-      console.log(1);
       this.show = true;
     },
   },

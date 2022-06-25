@@ -27,6 +27,30 @@ const routes = [
         },
       },
       {
+        path: '/home/videolist',
+        component: () => import('../views/videolist'),
+        meta: {
+          title: '视频区域',
+          isShow: false,
+        },
+      },
+      {
+        path: '/home/filed',
+        component: () => import('../views/filed'),
+        meta: {
+          title: '留言反馈',
+          isShow: false,
+        },
+      },
+      {
+        path: '/home/contact',
+        component: () => import('../views/contact'),
+        meta: {
+          title: '联系我们',
+          isShow: false,
+        },
+      },
+      {
         path: '/home/newsinfo/:id',
         component: () => import('../views/news/newsinfo'),
         props: true,

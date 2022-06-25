@@ -39,7 +39,6 @@ export default {
   created() {
     this.getImageInfo();
     this.getIhumImages();
-    console.log(this.imageInfo, this.thums);
   },
   methods: {
     async getImageInfo() {

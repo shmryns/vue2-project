@@ -2,7 +2,8 @@ import axios from 'axios';
 import { Toast } from 'vant';
 const service = axios.create({
   // baseURL: 'http://itfly.vip',
-  baseURL: 'http://10.41.3.239',
+  // baseURL: 'http://10.41.3.239',
+  baseURL: 'http://127.0.0.1',
   timeout: 3000,
 });
 

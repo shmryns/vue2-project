@@ -32,7 +32,6 @@ export default {
     async onSearch() {
       if (this.value == '') return;
       const { s } = await JSONP('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su', { wd: this.value }, 'cb');
-      // console.log(s);
       this.s = s;
     },
   },
