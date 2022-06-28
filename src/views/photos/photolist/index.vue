@@ -1,6 +1,9 @@
 <template>
   <div class="photolist">
-    <van-tabs animated>
+    <van-tabs
+      animated
+      sticky
+    >
       <van-tab
         v-for="item in cates"
         :key="item.id"
