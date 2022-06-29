@@ -18,6 +18,14 @@ const mutations = {
 
     localStorage.setItem('cart', JSON.stringify(state.cart));
   },
+  CHANGE_COUNT(state, goodsinfo) {
+    state.cart.forEach((item) => {
+      if (item.id === goodsinfo.id) {
+        item.count = goodsinfo.count;
+      }
+    });
+    localStorage.setItem('cart', JSON.stringify(state.cart));
+  },
   CHECK_ALL(state) {
     state.cart.forEach((item) => {
       item.isChecked = !item.isChecked;

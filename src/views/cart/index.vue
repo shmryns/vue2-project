@@ -23,6 +23,7 @@
                 theme="round"
                 button-size="22"
                 disable-input
+                @change="change(item.id, item.count)"
               />
             </template>
           </van-card>
@@ -68,6 +69,9 @@ export default {
     },
     showPopup() {
       this.show = true;
+    },
+    change(id, count) {
+      this.$store.commit('cart/CHANGE_COUNT', { id, count });
     },
   },
 };
