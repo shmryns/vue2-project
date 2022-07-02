@@ -1,5 +1,4 @@
 const state = {
-  count: 100,
   cart: JSON.parse(localStorage.getItem('cart') || '[]'),
 };
 
@@ -27,8 +26,9 @@ const mutations = {
     localStorage.setItem('cart', JSON.stringify(state.cart));
   },
   CHECK_ALL(state) {
+    let a = !this.getters['cart/getCheckAll'];
     state.cart.forEach((item) => {
-      item.isChecked = !item.isChecked;
+      item.isChecked = a;
     });
   },
 };
